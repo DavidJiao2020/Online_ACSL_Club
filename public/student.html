@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome, <span id="studentName"></span></h1>
+
+  <div class="card">
+    <h2>Register for ACSL</h2>
+    <form id="registerForm">
+      <label>Division:</label><br>
+      <select id="division" required>
+        <option value="Elementary">Elementary</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Senior">Senior</option>
+      </select><br>
+      <label>Participation:</label><br>
+      <select id="option" required>
+        <option value="A">Resources only</option>
+        <option value="B">Resources + Contest</option>
+      </select><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Your Status</h2>
+    <div id="status"></div>
+  </div>
+
+  <p><a href="resources.html">📚 Go to Resource Hub</a></p>
+  <p><a href="index.html" onclick="logout()">Logout</a></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

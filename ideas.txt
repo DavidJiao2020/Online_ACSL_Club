@@ -1,0 +1,73 @@
+***NOTE: This will be a single page application(website)
+
+1. login page
+    content:
+        text field: email address
+        text field: password
+        button: login
+        button: register
+        button: forgot password
+
+    action:
+        register:
+            register page:
+                text field: name
+                text field: email address
+                text field: password
+                [payment text fields here, currently nothing]
+                button: register
+                if registered previously:
+                    msg: email has been registered, use login.
+        login:
+            if email address and password are valid:
+                if account belongs to admin:
+                    admin page (2b)
+                else:
+                    student page (2a)
+            else:
+                msg: login failed, you may register or go to "forgot password"
+        forgot password:
+            forgot password page:
+                text field: email address
+                button: send change password request
+                wait for button pressed:
+                    send password change email to entered email address
+                msg: password change request sent to email
+
+2a. student page
+    content:
+        text: welcome, [name]
+        button: resources hub
+        Outlined box:
+            text: Register for a contest
+            select contest: elementary, classroom, junior, intermediate, senior
+            button: register for competition
+    action:
+        resources hub:
+            resources hub page:
+                big sections:
+                    elementary [tbd]
+                    classroom [tbd]
+                    junior [tbd]
+                    intermediate [tbd]
+                    senior [tbd]
+        register for competition:
+            register for competition page:
+                text: [information about the specific division] also refer to acsl.org
+                button: pay now [currently no action]
+
+2b. admin page
+    content:
+        list: registered students
+            format:
+                [person]
+                [person]
+                ...
+        list: competing teams (with students in them)
+            format: 
+                team 1: [person], [person]...
+                team 2: [person], [person]...
+                ...
+            place every new registered competitor in team that has people already (teams mac at 10 people)
+            if all teams are full with 10 people, then create a new team and put the new person
+    

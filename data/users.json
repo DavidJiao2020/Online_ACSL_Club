@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "David",
+    "email": "david.jiao.2020@gmail.com",
+    "password": "123456",
+    "role": "admin",
+    "confirmed": true,
+    "confirmationToken": null,
+    "resetToken": null
+  },
+  {
+    "id": 2,
+    "name": "jjj",
+    "email": "jennifershang99@gmail.com",
+    "password": "123",
+    "role": "student",
+    "confirmed": true,
+    "confirmationToken": null,
+    "division": "Elementary"
+  }
+]
