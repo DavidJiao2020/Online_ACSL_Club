@@ -8,15 +8,5 @@
     "confirmed": true,
     "confirmationToken": null,
     "resetToken": null
-  },
-  {
-    "id": 2,
-    "name": "jjj",
-    "email": "jennifershang99@gmail.com",
-    "password": "123",
-    "role": "student",
-    "confirmed": true,
-    "confirmationToken": null,
-    "division": "Elementary"
   }
 ]
